@@ -6,7 +6,7 @@ export const taskApi = createApi({
   reducerPath: "taskApi",
   tagTypes: ["Task"],
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_BASE_URL,
+    baseUrl: 'https://zdkhiu5mp5dwa.elma365.ru/pub/v1/app/test_sreda/test_task',
     //credentials: "same-origin",
     prepareHeaders: (headers) => {
       //headers.set('Access-Control-Allow-Origin','*');
