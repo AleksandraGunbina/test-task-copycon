@@ -1,5 +1,5 @@
+import { token } from './../../halpers/accessData';
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { token } from "../../healpers/token";
 
 export const taskApi = createApi({
   reducerPath: "taskApi",
@@ -17,9 +17,6 @@ export const taskApi = createApi({
         url: "/list",
         method: "POST",
         body: values,
-        headers: {
-          Authorization: `${token}`,
-        },
       }),
     }),
   }),

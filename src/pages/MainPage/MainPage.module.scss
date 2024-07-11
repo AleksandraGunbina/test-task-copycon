@@ -1,0 +1,48 @@
+.mainPageWrapper {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainPageBtn {
+  border: none;
+  border-radius: 20px;
+  background: $bg-btn-primary-color;
+  color: $gray;
+  font-size: $btn-text-secondary-size;
+  font-weight: $text-semi-bold-weight;
+  padding: 20px;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+  transition: all 1s;
+
+  &::before {
+    border-radius: 20px;
+    background: $btn-primary-hover-bg;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+  &:hover {
+    background: $btn-primary-hover-bg;
+  }
+}
+
+.maniPageResult {
+  color: #000000;
+  margin-top: 50px;
+  text-align: center;
+}

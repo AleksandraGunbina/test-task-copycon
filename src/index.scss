@@ -1,2 +1,45 @@
-@import "normalize.css";
-@import "./styles/variables.scss";
+@import 'normalize.css';
+@import './styles/variables.scss';
+
+html,
+body {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $bg-primary-color;
+  color: $text-primary-color;
+  font-size: $text-primary-size;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-primary-color;
+  padding-bottom: 300px;
+
+  @include media(md) {
+    padding-bottom: 200px;
+  }
+}

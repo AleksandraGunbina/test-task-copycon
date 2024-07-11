@@ -2,6 +2,24 @@
 $white: #ffffff;
 $gray: #ededed;
 $light-red: #fe0101;
+$mint: #e6fff7;
+$light-orange: #e8a87c;
+$orange: #e27d60;
+
+/* gradients */
+$orange-gradient: linear-gradient(
+79deg,
+  #4a0202 -13.06%,
+  rgba(231, 26, 26, 0.67) 105.53%
+);
+
+/* bg colors */
+$bg-primary-color: $mint;
+$bg-btn-primary-color: $orange;
+$btn-primary-hover-bg: $orange-gradient;
+
+/*text colors*/
+$text-primary-color: $gray;
 
 /* text size */
 $text-primary-size: 18px;
