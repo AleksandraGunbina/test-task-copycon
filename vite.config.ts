@@ -5,16 +5,17 @@ import sass from "sass";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
   server: {
     proxy: {
-      '/api': {
-        target: 'https://zdkhiu5mp5dwa.elma365.ru/pub/v1/app/test_sreda/test_task',
+      "/list": {
+        target:
+          "https://zdkhiu5mp5dwa.elma365.ru/pub/v1/app/test_sreda/test_task/",
         changeOrigin: true,
-        secure: false,
+        //secure: false,
       },
     },
   },
+  plugins: [react()],
   css: {
     preprocessorOptions: {
       scss: {
